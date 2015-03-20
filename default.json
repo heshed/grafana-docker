@@ -362,8 +362,7 @@
             }
           ],
           "aliasColors": {
-            "gatling.*.[^.]+.allRequests.ko.count.mean": "#ff0000",
-            "gatling.ldpsport.allRequests.ko.count.mean": "#BF1B00"
+            "gatling.*.[^.]+.allRequests.ko.count.mean": "#ff0000"
           },
           "seriesOverrides": [],
           "links": []
