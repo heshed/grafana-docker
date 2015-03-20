@@ -202,21 +202,23 @@
             {
               "function": "mean",
               "column": "value",
-              "series": "gatling.ldpsport.allRequests.all.percentiles75-0",
-              "query": "select mean(value) from \"gatling.*.[^.]+.all.percentiles75-0\" where $timeFilter group by time($interval) order asc"
+              "series": "/gatling.*.[^.]+.allRequests.all.percentiles75-0/",
+              "query": "select mean(value) from /gatling.*.[^.]+.allRequests.all.percentiles75-0/ where $timeFilter group by time($interval) order asc",
+              "hide": false
             },
             {
               "target": "",
               "function": "mean",
               "column": "value",
-              "series": "gatling.ldpsport.allRequests.all.percentiles95-0",
-              "query": "select mean(value) from \"gatling.*.[^.]+.allRequests.all.percentiles95-0\" where $timeFilter group by time($interval) order asc"
+              "series": "/gatling.*.[^.]+.allRequests.all.percentiles95-0/",
+              "query": "select mean(value) from /gatling.*.[^.]+.allRequests.all.percentiles95-0/ where $timeFilter group by time($interval) order asc",
+              "hide": false
             },
             {
               "function": "mean",
               "column": "value",
-              "series": "gatling.ldpsport.allRequests.all.percentiles99-0",
-              "query": "select mean(value) from \"gatling.*.[^.]+.allRequests.all.percentiles99-0\" where $timeFilter group by time($interval) order asc"
+              "series": "/gatling.*.[^.]+.allRequests.all.percentiles99-0/",
+              "query": "select mean(value) from /gatling.*.[^.]+.allRequests.all.percentiles99-0/ where $timeFilter group by time($interval) order asc"
             }
           ],
           "aliasColors": {
@@ -280,26 +282,8 @@
             {
               "function": "mean",
               "column": "value",
-              "series": "gatling.ldpsport.CPS_Nav_Builder.all.percentiles50-0",
-              "query": "select mean(value) from \"gatling.ldpsport.CPS_Nav_Builder.all.percentiles50-0\" where $timeFilter group by time($interval) order asc"
-            },
-            {
-              "function": "mean",
-              "column": "value",
-              "series": "gatling.ldpsport.Pal_Client.all.percentiles50-0",
-              "query": "select mean(value) from \"gatling.ldpsport.Pal_Client.all.percentiles50-0\" where $timeFilter group by time($interval) order asc"
-            },
-            {
-              "function": "mean",
-              "column": "value",
-              "series": "gatling.ldpsport.Sports_Data.all.percentiles50-0",
-              "query": "select mean(value) from \"gatling.ldpsport.Sports_Data.all.percentiles50-0\" where $timeFilter group by time($interval) order asc"
-            },
-            {
-              "function": "mean",
-              "column": "value",
-              "series": "gatling.ldpsport.allRequests.all.percentiles50-0",
-              "query": "select mean(value) from \"gatling.ldpsport.allRequests.all.percentiles50-0\" where $timeFilter group by time($interval) order asc"
+              "series": "/gatling.*.[^.]+.allRequests.all.percentiles50-0/",
+              "query": "select mean(value) from /gatling.*.[^.]+.allRequests.all.percentiles50-0/ where $timeFilter group by time($interval) order asc"
             }
           ],
           "aliasColors": {
@@ -372,26 +356,8 @@
             {
               "function": "mean",
               "column": "value",
-              "series": "gatling.ldpsport.CPS_Nav_Builder.ko.count",
-              "query": "select mean(value) from \"gatling.ldpsport.CPS_Nav_Builder.ko.count\" where $timeFilter group by time($interval) order asc"
-            },
-            {
-              "function": "mean",
-              "column": "value",
-              "series": "gatling.ldpsport.Pal_Client.ko.count",
-              "query": "select mean(value) from \"gatling.ldpsport.Pal_Client.ko.count\" where $timeFilter group by time($interval) order asc"
-            },
-            {
-              "function": "mean",
-              "column": "value",
-              "series": "gatling.ldpsport.Sports_Data.ko.count",
-              "query": "select mean(value) from \"gatling.ldpsport.Sports_Data.ko.count\" where $timeFilter group by time($interval) order asc"
-            },
-            {
-              "function": "mean",
-              "column": "value",
-              "series": "gatling.ldpsport.allRequests.ko.count",
-              "query": "select mean(value) from \"gatling.ldpsport.allRequests.ko.count\" where $timeFilter group by time($interval) order asc"
+              "series": "/gatling.*.[^.]+.allRequests.ko.count/",
+              "query": "select mean(value) from /gatling.*.[^.]+.allRequests.ko.count/ where $timeFilter group by time($interval) order asc"
             }
           ],
           "aliasColors": {
