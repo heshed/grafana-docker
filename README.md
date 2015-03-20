@@ -1,5 +1,6 @@
-grafana-docker 
+grafana
 =================
 
-Based on [this](https://github.com/DaveBlooman/gatling-docker). 
+A grafana docker file.
+
 
