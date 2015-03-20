@@ -1,5 +1,5 @@
-InfluxDB/Grafana 
+grafana-docker 
 =================
 
-InfluxDB and Grafana Dockerfiles, based on [this source](https://github.com/DaveBlooman/gatling-docker). 
+Based on [this](https://github.com/DaveBlooman/gatling-docker). 
 
