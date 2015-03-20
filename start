@@ -9,4 +9,4 @@ docker run -d \
 echo "Starting Grafana"
 docker rm -f grafana >/dev/null 2>&1
 docker run -d \
-           -p 8081:8081 --name grafana aidylewis/grafana
+           -p 8081:8081 --name grafana aidylewis/grafana-docker
