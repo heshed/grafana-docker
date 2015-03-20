@@ -69,7 +69,8 @@
               "function": "mean",
               "column": "value",
               "series": "/gatling.+all.count/",
-              "query": "select mean(value) from /gatling.+all.count/ where $timeFilter group by time($interval) order asc"
+              "query": "select mean(value) from /gatling.+all.count/ where $timeFilter group by time($interval) order asc",
+              "hide": false
             }
           ],
           "aliasColors": {},
@@ -134,6 +135,9 @@
               "query": "select mean(value) from /gatling.+all.max/ where $timeFilter group by time($interval) order asc"
             }
           ],
+          "aliasColors": {
+            "gatling.ldpsport.allRequests.all.max.mean": "#890F02"
+          },
           "seriesOverrides": [],
           "links": []
         }
@@ -146,9 +150,9 @@
       "collapse": false,
       "panels": [
         {
-          "title": "75, 95 & 99 percentile",
+          "title": "percentiles",
           "error": false,
-          "span": 6,
+          "span": 12,
           "editable": true,
           "type": "graph",
           "id": 4,
@@ -162,7 +166,7 @@
           ],
           "grid": {
             "leftMax": null,
-            "rightMax": null,
+            "rightMax": 9,
             "leftMin": null,
             "rightMin": null,
             "threshold1": null,
@@ -187,7 +191,9 @@
             "total": false,
             "avg": false,
             "rightSide": false,
-            "alignAsTable": true
+            "alignAsTable": true,
+            "sortDesc": true,
+            "sort": "current"
           },
           "nullPointMode": "null",
           "steppedLine": false,
@@ -199,85 +205,36 @@
             {
               "function": "mean",
               "column": "value",
+              "series": "/gatling.+allRequests.all.percentiles50-0/",
+              "query": "select mean(value) from /gatling.+allRequests.all.percentiles50-0/ where $timeFilter group by time($interval) order asc"
+            },
+            {
+              "target": "",
+              "function": "mean",
+              "column": "value",
               "series": "/gatling.+allRequests.all.percentiles75-0/",
-              "query": "select mean(value) from /gatling.+allRequests.all.percentiles75-0/ where $timeFilter group by time($interval) order asc",
-              "hide": false
+              "query": "select mean(value) from /gatling.+allRequests.all.percentiles75-0/ where $timeFilter group by time($interval) order asc"
             },
             {
               "target": "",
               "function": "mean",
               "column": "value",
               "series": "/gatling.+allRequests.all.percentiles95-0/",
-              "query": "select mean(value) from /gatling.+allRequests.all.percentiles95-0/ where $timeFilter group by time($interval) order asc",
-              "hide": false
+              "query": "select mean(value) from /gatling.+allRequests.all.percentiles95-0/ where $timeFilter group by time($interval) order asc"
             },
             {
+              "target": "",
               "function": "mean",
               "column": "value",
               "series": "/gatling.+allRequests.all.percentiles99-0/",
               "query": "select mean(value) from /gatling.+allRequests.all.percentiles99-0/ where $timeFilter group by time($interval) order asc"
             }
           ],
-          "seriesOverrides": [],
-          "links": []
-        },
-        {
-          "title": "50 Percentile",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 3,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "ms",
-            "ms"
-          ],
-          "grid": {
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          "aliasColors": {
+            "gatling.ldpsport.allRequests.all.percentiles99-0.mean": "#E24D42",
+            "gatling.ldpsport.allRequests.all.percentiles95-0.mean": "#E5A8E2",
+            "gatling.ldpsport.allRequests.all.percentiles50-0.mean": "#3F6833"
           },
-          "lines": true,
-          "fill": 0,
-          "linewidth": 3,
-          "points": false,
-          "pointradius": 5,
-          "bars": false,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": true,
-            "current": true,
-            "total": false,
-            "avg": false,
-            "alignAsTable": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": false
-          },
-          "targets": [
-            {
-              "function": "mean",
-              "column": "value",
-              "series": "/gatling.+allRequests.all.percentiles50-0/",
-              "query": "select mean(value) from /gatling.+allRequests.all.percentiles50-0/ where $timeFilter group by time($interval) order asc"
-            }
-          ],
           "seriesOverrides": [],
           "links": []
         }
@@ -348,7 +305,10 @@
             }
           ],
           "aliasColors": {
-            "/gatling.+allRequests.ko.count.mean/": "#FF0000"
+            "gatling.ldpsport.CPS_Nav_Builder.ko.count.mean": "#EF843C",
+            "gatling.ldpsport.Pal_Client.ko.count.mean": "#E5AC0E",
+            "gatling.ldpsport.Sports_Data.ko.count.mean": "#EA6460",
+            "gatling.ldpsport.allRequests.ko.count.mean": "#BF1B00"
           },
           "seriesOverrides": [],
           "links": []
