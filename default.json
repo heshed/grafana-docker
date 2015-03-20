@@ -150,7 +150,7 @@
       "collapse": false,
       "panels": [
         {
-          "title": "percentiles",
+          "title": "Percentiles",
           "error": false,
           "span": 12,
           "editable": true,

@@ -1,5 +1,8 @@
-grafana-docker 
+grafana
 =================
 
-Based on [this](https://github.com/DaveBlooman/gatling-docker). 
+```sh
+docker run -d -p 8081:8081 --name grafana aidylewis/grafana
+```
+
 
