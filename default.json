@@ -135,9 +135,7 @@
               "query": "select mean(value) from /gatling.+all.max/ where $timeFilter group by time($interval) order asc"
             }
           ],
-          "aliasColors": {
-            "gatling.ldpsport.allRequests.all.max.mean": "#890F02"
-          },
+          "aliasColors": {},
           "seriesOverrides": [],
           "links": []
         }
