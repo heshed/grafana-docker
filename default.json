@@ -230,11 +230,7 @@
               "query": "select mean(value) from /gatling.+allRequests.all.percentiles99-0/ where $timeFilter group by time($interval) order asc"
             }
           ],
-          "aliasColors": {
-            "gatling.ldpsport.allRequests.all.percentiles99-0.mean": "#E24D42",
-            "gatling.ldpsport.allRequests.all.percentiles95-0.mean": "#E5A8E2",
-            "gatling.ldpsport.allRequests.all.percentiles50-0.mean": "#3F6833"
-          },
+          "aliasColors": {},
           "seriesOverrides": [],
           "links": []
         },
@@ -296,12 +292,7 @@
               "query": "select mean(value) from /gatling.+allRequests.ko.count/ where $timeFilter group by time($interval) order asc"
             }
           ],
-          "aliasColors": {
-            "gatling.ldpsport.CPS_Nav_Builder.ko.count.mean": "#EF843C",
-            "gatling.ldpsport.Pal_Client.ko.count.mean": "#E5AC0E",
-            "gatling.ldpsport.Sports_Data.ko.count.mean": "#EA6460",
-            "gatling.ldpsport.allRequests.ko.count.mean": "#BF1B00"
-          },
+          "aliasColors": {},
           "seriesOverrides": [],
           "links": []
         }
