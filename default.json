@@ -152,7 +152,7 @@
         {
           "title": "Percentiles",
           "error": false,
-          "span": 12,
+          "span": 6,
           "editable": true,
           "type": "graph",
           "id": 4,
@@ -237,19 +237,11 @@
           },
           "seriesOverrides": [],
           "links": []
-        }
-      ]
-    },
-    {
-      "title": "New row",
-      "height": "250px",
-      "editable": true,
-      "collapse": false,
-      "panels": [
+        },
         {
           "title": "Errors",
           "error": false,
-          "span": 12,
+          "span": 6,
           "editable": true,
           "type": "graph",
           "id": 5,
@@ -314,6 +306,13 @@
           "links": []
         }
       ]
+    },
+    {
+      "title": "New row",
+      "height": "250px",
+      "editable": true,
+      "collapse": false,
+      "panels": []
     },
     {
       "title": "New row",
