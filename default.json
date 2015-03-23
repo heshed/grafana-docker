@@ -293,7 +293,8 @@
               "function": "mean",
               "column": "value",
               "series": "/gatling.+allRequests.ko.count/",
-              "query": "select mean(value) from /gatling.+allRequests.ko.count/ where $timeFilter group by time($interval) order asc"
+              "query": "select mean(value) from /gatling.+allRequests.ko.count/ where $timeFilter group by time($interval) order asc",
+              "interval": "10s"
             }
           ],
           "aliasColors": {},
