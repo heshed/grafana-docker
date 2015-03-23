@@ -70,7 +70,8 @@
               "column": "value",
               "series": "/gatling.+all.count/",
               "query": "select mean(value) from /gatling.+all.count/ where $timeFilter group by time($interval) order asc",
-              "hide": false
+              "hide": false,
+              "interval": "10s"
             }
           ],
           "aliasColors": {},
@@ -132,7 +133,8 @@
               "function": "mean",
               "column": "value",
               "series": "/gatling.+all.max/",
-              "query": "select mean(value) from /gatling.+all.max/ where $timeFilter group by time($interval) order asc"
+              "query": "select mean(value) from /gatling.+all.max/ where $timeFilter group by time($interval) order asc",
+              "interval": "10s"
             }
           ],
           "aliasColors": {},
@@ -204,28 +206,32 @@
               "function": "mean",
               "column": "value",
               "series": "/gatling.+allRequests.all.percentiles50-0/",
-              "query": "select mean(value) from /gatling.+allRequests.all.percentiles50-0/ where $timeFilter group by time($interval) order asc"
+              "query": "select mean(value) from /gatling.+allRequests.all.percentiles50-0/ where $timeFilter group by time($interval) order asc",
+              "interval": "10s"
             },
             {
               "target": "",
               "function": "mean",
               "column": "value",
               "series": "/gatling.+allRequests.all.percentiles75-0/",
-              "query": "select mean(value) from /gatling.+allRequests.all.percentiles75-0/ where $timeFilter group by time($interval) order asc"
+              "query": "select mean(value) from /gatling.+allRequests.all.percentiles75-0/ where $timeFilter group by time($interval) order asc",
+              "interval": "10s"
             },
             {
               "target": "",
               "function": "mean",
               "column": "value",
               "series": "/gatling.+allRequests.all.percentiles95-0/",
-              "query": "select mean(value) from /gatling.+allRequests.all.percentiles95-0/ where $timeFilter group by time($interval) order asc"
+              "query": "select mean(value) from /gatling.+allRequests.all.percentiles95-0/ where $timeFilter group by time($interval) order asc",
+              "interval": "10s"
             },
             {
               "target": "",
               "function": "mean",
               "column": "value",
               "series": "/gatling.+allRequests.all.percentiles99-0/",
-              "query": "select mean(value) from /gatling.+allRequests.all.percentiles99-0/ where $timeFilter group by time($interval) order asc"
+              "query": "select mean(value) from /gatling.+allRequests.all.percentiles99-0/ where $timeFilter group by time($interval) order asc",
+              "interval": "10s"
             }
           ],
           "aliasColors": {},
