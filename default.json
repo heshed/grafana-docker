@@ -33,8 +33,8 @@
           "grid": {
             "leftMax": null,
             "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
+            "leftMin": 0,
+            "rightMin": 0,
             "threshold1": null,
             "threshold2": null,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
@@ -95,7 +95,7 @@
           "grid": {
             "leftMax": null,
             "rightMax": null,
-            "leftMin": null,
+            "leftMin": 0,
             "rightMin": null,
             "threshold1": null,
             "threshold2": null,
@@ -165,7 +165,7 @@
           "grid": {
             "leftMax": null,
             "rightMax": 9,
-            "leftMin": null,
+            "leftMin": 0,
             "rightMin": null,
             "threshold1": null,
             "threshold2": null,
@@ -250,7 +250,7 @@
           "grid": {
             "leftMax": null,
             "rightMax": null,
-            "leftMin": null,
+            "leftMin": 0,
             "rightMin": null,
             "threshold1": null,
             "threshold2": null,
