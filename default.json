@@ -11,7 +11,7 @@
   "rows": [
     {
       "title": "Row1",
-      "height": "500px",
+      "height": "350px",
       "editable": true,
       "collapse": false,
       "panels": [
@@ -143,7 +143,7 @@
     },
     {
       "title": "New row",
-      "height": "500px",
+      "height": "350px",
       "editable": true,
       "collapse": false,
       "panels": [
