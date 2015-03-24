@@ -188,7 +188,7 @@
             "min": true,
             "max": true,
             "current": true,
-            "total": true,
+            "total": false,
             "avg": true,
             "rightSide": false,
             "alignAsTable": true,
