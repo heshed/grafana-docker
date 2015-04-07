@@ -58,11 +58,11 @@
             "avg": true,
             "alignAsTable": true
           },
-          "nullPointMode": "connected",
+          "nullPointMode": "null as zero",
           "steppedLine": false,
           "tooltip": {
             "value_type": "cumulative",
-            "shared": false
+            "shared": true
           },
           "targets": [
             {
@@ -122,11 +122,11 @@
             "alignAsTable": true,
             "rightSide": false
           },
-          "nullPointMode": "connected",
+          "nullPointMode": "null as zero",
           "steppedLine": false,
           "tooltip": {
             "value_type": "cumulative",
-            "shared": false
+            "shared": true
           },
           "targets": [
             {
@@ -195,11 +195,11 @@
             "sortDesc": true,
             "sort": "current"
           },
-          "nullPointMode": "null",
+          "nullPointMode": "null as zero",
           "steppedLine": false,
           "tooltip": {
             "value_type": "cumulative",
-            "shared": false
+            "shared": true
           },
           "targets": [
             {
@@ -282,11 +282,11 @@
             "alignAsTable": true,
             "sortDesc": true
           },
-          "nullPointMode": "connected",
+          "nullPointMode": "null as zero",
           "steppedLine": false,
           "tooltip": {
             "value_type": "cumulative",
-            "shared": false
+            "shared": true
           },
           "targets": [
             {
