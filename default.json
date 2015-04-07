@@ -11,7 +11,7 @@
   "rows": [
     {
       "title": "Row1",
-      "height": "350px",
+      "height": "450px",
       "editable": true,
       "collapse": false,
       "panels": [
@@ -49,14 +49,14 @@
           "stack": false,
           "percentage": false,
           "legend": {
-            "show": true,
-            "values": true,
+            "show": false,
+            "values": false,
             "min": true,
             "max": true,
             "current": true,
             "total": true,
             "avg": true,
-            "alignAsTable": true
+            "alignAsTable": false
           },
           "nullPointMode": "null as zero",
           "steppedLine": false,
@@ -112,14 +112,14 @@
           "stack": false,
           "percentage": false,
           "legend": {
-            "show": true,
-            "values": true,
+            "show": false,
+            "values": false,
             "min": false,
             "max": true,
             "current": true,
             "total": false,
             "avg": false,
-            "alignAsTable": true,
+            "alignAsTable": false,
             "rightSide": false
           },
           "nullPointMode": "null as zero",
@@ -145,7 +145,7 @@
     },
     {
       "title": "New row",
-      "height": "350px",
+      "height": "450px",
       "editable": true,
       "collapse": false,
       "panels": [
@@ -183,15 +183,15 @@
           "stack": false,
           "percentage": false,
           "legend": {
-            "show": true,
-            "values": true,
+            "show": false,
+            "values": false,
             "min": true,
             "max": true,
             "current": true,
             "total": false,
             "avg": true,
             "rightSide": false,
-            "alignAsTable": true,
+            "alignAsTable": false,
             "sortDesc": true,
             "sort": "current"
           },
@@ -272,14 +272,14 @@
           "stack": false,
           "percentage": false,
           "legend": {
-            "show": true,
-            "values": true,
+            "show": false,
+            "values": false,
             "min": false,
             "max": true,
             "current": true,
             "total": true,
             "avg": false,
-            "alignAsTable": true,
+            "alignAsTable": false,
             "sortDesc": true
           },
           "nullPointMode": "null as zero",
