@@ -6,7 +6,7 @@
   "style": "dark",
   "timezone": "browser",
   "editable": true,
-  "hideControls": false,
+  "hideControls": true,
   "sharedCrosshair": false,
   "rows": [
     {
@@ -49,30 +49,30 @@
           "stack": false,
           "percentage": false,
           "legend": {
-            "show": false,
-            "values": false,
+            "show": true,
+            "values": true,
             "min": true,
             "max": true,
             "current": true,
             "total": true,
             "avg": true,
-            "alignAsTable": false
+            "alignAsTable": true
           },
           "nullPointMode": "null as zero",
           "steppedLine": false,
           "tooltip": {
             "value_type": "cumulative",
-            "shared": true
+            "shared": false
           },
           "targets": [
             {
               "function": "mean",
               "column": "value",
-              "series": "/gatling.+all.count/",
-              "query": "select mean(value) from /gatling.+all.count/ where $timeFilter group by time($interval) order asc",
+              "series": "/gatling.+allRequests.all.count/",
+              "query": "select mean(value) from /gatling.+allRequests.all.count/ where $timeFilter group by time($interval) order asc",
               "hide": false,
               "interval": "10s",
-              "alias": "$2"
+              "alias": ""
             }
           ],
           "aliasColors": {},
@@ -113,30 +113,30 @@
           "stack": false,
           "percentage": false,
           "legend": {
-            "show": false,
-            "values": false,
+            "show": true,
+            "values": true,
             "min": false,
             "max": true,
             "current": true,
             "total": false,
             "avg": false,
-            "alignAsTable": false,
+            "alignAsTable": true,
             "rightSide": false
           },
           "nullPointMode": "null as zero",
           "steppedLine": false,
           "tooltip": {
             "value_type": "cumulative",
-            "shared": true
+            "shared": false
           },
           "targets": [
             {
               "function": "mean",
               "column": "value",
-              "series": "/gatling.+all.max/",
-              "query": "select mean(value) from /gatling.+all.max/ where $timeFilter group by time($interval) order asc",
+              "series": "/gatling.+allRequests.all.max/",
+              "query": "select mean(value) from /gatling.+allRequests.all.max/ where $timeFilter group by time($interval) order asc",
               "interval": "10s",
-              "alias": "$2"
+              "alias": ""
             }
           ],
           "aliasColors": {},
@@ -185,15 +185,15 @@
           "stack": false,
           "percentage": false,
           "legend": {
-            "show": false,
-            "values": false,
+            "show": true,
+            "values": true,
             "min": true,
             "max": true,
             "current": true,
             "total": false,
             "avg": true,
             "rightSide": false,
-            "alignAsTable": false,
+            "alignAsTable": true,
             "sortDesc": true,
             "sort": "current"
           },
@@ -210,7 +210,7 @@
               "series": "/gatling.+allRequests.all.percentiles50-0/",
               "query": "select mean(value) from /gatling.+allRequests.all.percentiles50-0/ where $timeFilter group by time($interval) order asc",
               "interval": "10s",
-              "alias": "$2.$4"
+              "alias": ""
             },
             {
               "target": "",
@@ -219,7 +219,7 @@
               "series": "/gatling.+allRequests.all.percentiles75-0/",
               "query": "select mean(value) from /gatling.+allRequests.all.percentiles75-0/ where $timeFilter group by time($interval) order asc",
               "interval": "10s",
-              "alias": "$2.$4"
+              "alias": ""
             },
             {
               "target": "",
@@ -228,7 +228,7 @@
               "series": "/gatling.+allRequests.all.percentiles95-0/",
               "query": "select mean(value) from /gatling.+allRequests.all.percentiles95-0/ where $timeFilter group by time($interval) order asc",
               "interval": "10s",
-              "alias": "$2.$4"
+              "alias": ""
             },
             {
               "target": "",
@@ -237,7 +237,7 @@
               "series": "/gatling.+allRequests.all.percentiles99-0/",
               "query": "select mean(value) from /gatling.+allRequests.all.percentiles99-0/ where $timeFilter group by time($interval) order asc",
               "interval": "10s",
-              "alias": "$2.$4"
+              "alias": ""
             }
           ],
           "aliasColors": {},
@@ -278,21 +278,21 @@
           "stack": false,
           "percentage": false,
           "legend": {
-            "show": false,
-            "values": false,
+            "show": true,
+            "values": true,
             "min": false,
             "max": true,
             "current": true,
             "total": true,
             "avg": false,
-            "alignAsTable": false,
+            "alignAsTable": true,
             "sortDesc": true
           },
           "nullPointMode": "null as zero",
           "steppedLine": false,
           "tooltip": {
             "value_type": "cumulative",
-            "shared": true
+            "shared": false
           },
           "targets": [
             {
@@ -301,7 +301,7 @@
               "series": "/gatling.+allRequests.ko.count/",
               "query": "select mean(value) from /gatling.+allRequests.ko.count/ where $timeFilter group by time($interval) order asc",
               "interval": "10s",
-              "alias": "$2.errors"
+              "alias": ""
             }
           ],
           "aliasColors": {},
